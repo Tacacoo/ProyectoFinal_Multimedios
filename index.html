@@ -19,15 +19,19 @@
 
     <div class="col-md-3">
         <div class="well text-center">
-            <a class="btn btn-primary" href="#" onclick="movieInfo()" data-toggle="modal" data-target="#mymodal">Login</a>
+            <a class="btn btn-primary" href="#" onclick="mostrarLogin()" data-toggle="modal"
+                data-target="#modalLogin">Login</a>
+
+            <a class="btn btn-primary" href="#" onclick="mostrarRegistro()" data-toggle="modal"
+                data-target="#modalRegister">Register</a>
         </div>
     </div>
 
-    <div class="modal fade" id="mymodal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalLabel">Movie Information</h5>
+                    <h5 class="modal-title" id="modalLabel">Login</h5>
 
                 </div>
                 <div class="modal-body" id="info">
