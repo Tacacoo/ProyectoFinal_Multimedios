@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>asd</title>
+    <title>Recetas de mi abuela</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,22 +13,14 @@
 </head>
 
 <body>
-    <script src="js/main.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-
     <div class="col-md-3">
         <div class="well text-center">
-            <a class="btn btn-primary" href="#" onclick="mostrarLogin()" data-toggle="modal"
-                data-target="#modalLogin">Login</a>
+            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
 
-            <a class="btn btn-primary" href="#" onclick="mostrarRegistro()" data-toggle="modal"
-                data-target="#modalRegister">Register</a>
+            <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalRegister">Register</a>
         </div>
     </div>
+
     <!--Modal login -->
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -63,10 +55,11 @@
                                 placeholder="Password" required="">
 
                             <div class="row">
-                                <a class="btn btn-link col-md-6" href="#" id="btn-signup">Create an account</a>
-                                <a class="btn btn-link col md-6" href="#" id="forgot_pswd">Don't remember your
-                                    password?</a>
+                                <a class="btn btn-link col-md-6" href="#" data-toggle="modal"
+                                    data-target="#modalRegister">Create an account</a>
+                                <a class="btn btn-link col md-6" href="#">Don't remember your password?</a>
                             </div>
+
                             <div class="container-fluid h-100">
                                 <div class="row w-100 align-items-center">
                                     <div class="col text-center">
@@ -77,8 +70,26 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                        <form action="/signup/" class="form-signup">
+
+    <!--Modal create an account -->
+    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Create an account</h5>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body" id="info">
+
+                    <div id="logreg-forms">
+                        <form class="form-signin">
+
                             <div class="container-fluid h-100">
                                 <div class="row w-100 align-items-center">
                                     <div class="col text-center">
@@ -95,31 +106,65 @@
                             <p style="text-align:center">OR </p>
 
                             <input style="text-align: center" type="email" id="inputEmail" class="form-control"
-                                placeholder="Username or Email" required="" autofocus="">
+                                placeholder="Email" required="" autofocus="">
+
+                            <input style="text-align: center" type="text" id="inputUsername" class="form-control"
+                                placeholder="Username" required="">
+
+                            <input style="text-align: center" type="text" id="inputName" class="form-control"
+                                placeholder="Fullname" required="" autofocus="">
+
                             <input style="text-align: center" type="password" id="inputPassword" class="form-control"
                                 placeholder="Password" required="">
 
-                            <div class="row">
-                                <a class="btn btn-link col-md-6" id="">Create an account</a>
-                                <a class="btn btn-link col md-6" id="forgot_pswd">Don't remember your password?</a>
+                            <input style="text-align: center" type="password" id="inputConfPassword"
+                                class="form-control" placeholder="Confirm Password" required="">
+
+                                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> <!--Test key Llave para probar-->
+
+                            <div>
+                                <label>
+                                    <input name="remember" type="checkbox" value="Remember Me"> Accept terms and
+                                    conditions
+                                </label>
                             </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="remember" type="checkbox" value="Remember Me"> Would you like to join
+                                    our mailing list?
+                                </label>
+                            </div>
+
                             <div class="container-fluid h-100">
                                 <div class="row w-100 align-items-center">
                                     <div class="col text-center">
                                         <button class="btn btn-success bt-login" type="submit"><i
                                                 class="fas fa-sign-in-alt"></i>
-                                            Login</button>
-                                    </div>
+                                            Create Account</button>
+                                        <div style="padding-top: 35px; font-size: 85%; ">Do you have an account? <a
+                                                style="display: inline;" href="#">
 
+                                                Sign in Here!
+
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
 
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
