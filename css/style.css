@@ -12,19 +12,10 @@ div.col-md-3{
     border-left-style: solid;
     padding-right: 0px;
 }
-.container.movie{
-    max-width: 1380px;
-    padding: 40px;
-}
 .modal-dialog {
     max-width: 850px;
 }
 
-.modal-title
-.modal-footer {
-    margin: 0 auto;
-   
-}
 
 div.container_modal
 div.column_modal{
@@ -32,3 +23,109 @@ div.column_modal{
     flex-direction: row;
     padding: 100px;
 }
+
+/*Inside modal*/
+#logreg-forms{
+    width:100%;
+    margin:2vh auto;
+    background-color:#f3f3f3;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#logreg-forms form {
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
+}
+
+#logreg-forms .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#logreg-forms .form-control:focus { z-index: 2; }
+#logreg-forms .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#logreg-forms .form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#logreg-forms .social-login{
+    width:390px;
+    margin-bottom: 14px;
+    margin-left: 35px;
+}
+
+#logreg-forms .social-btn{
+    width:84px;
+    margin-left: 60px;
+}
+
+#logreg-forms .fb{
+    margin-left: 30px !important;
+}
+
+#logreg-forms a{
+    display: block;
+    padding-top:10px;
+    color:lightseagreen;
+}
+
+#logreg-form .lines{
+    width:200px;
+    border:1px solid red;
+}
+
+#logreg-form.bt-login{
+    width: 15vw;
+}
+
+#logreg-forms .login-links{
+    text-align: center;
+}
+
+#logreg-forms button[type="submit"]{ margin-top:10px; }
+
+
+#logreg-forms .form-reset, #logreg-forms .form-signup{ display: none; }
+
+#logreg-forms .form-signup .social-btn{ width:210px; }
+
+#logreg-forms .form-signup input { margin-bottom: 2px;}
+
+
+
+/* Mobile */
+
+@media screen and (max-width:500px){
+    #logreg-forms3{
+        max-width:300px;
+    }
+
+    #logreg-forms .bt-login{
+        width: 76.5px;
+    }
+    
+
+}
+@media screen and (max-width:450px){
+    #logreg-forms .social-btn{
+        width: 64px;
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .bt-login{
+        width: 15vw;
+    }
+}
+
