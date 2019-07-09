@@ -31,8 +31,8 @@ div.col-md-3
 
 .box{
     width: 260px;
-    height: 220px;
-    background-color: blue;
+    height: 110px;
+    background-color: transparent;
     margin: 10px;
 }
 
@@ -169,7 +169,7 @@ max-width: 100%;
     text-align: center;
     height: 30px;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.5rem;
     color: #fff;
     border: solid;
     border-bottom: none;
@@ -179,9 +179,41 @@ max-width: 100%;
     text-align: center;
     height: 30px;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.5rem;
     border: solid;
     border-top: none;
+}
+
+/*recipe*/
+.checked {
+    color: orange;
+}
+
+.bt-tag{
+    color: fuchsia;
+    border-width: 2.5px;
+    border-color: fuchsia;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.social-li{
+    
+    display: inline;
+}
+
+.social-li img{
+    margin-top: 20px;
+    width: 44px;
+    height: 44px;
+}
+
+.li-interactions .margin{
+    margin-top: 25vw;
+}
+.related-img{
+    width: 100%;
+    height: 100%;
 }
 
 /* Mobile login*/
@@ -195,9 +227,10 @@ max-width: 100%;
         width: 76.5px;
     }
     .box{
-        width: 85px;
-        height: 85px;
+    width: 100%;
+    height: 60px;      
 }
+
 .font-disp{
     font-size: 6px;
     margin-left: 0px;
@@ -231,32 +264,18 @@ max-width: 100%;
     .bt-login{
         width: 15vw;
     }
-
-}
-/*recipe*/
-.checked {
-    color: orange;
-}
-
-.bt-tag{
-    color: fuchsia;
-    border-width: 2.5px;
-    border-color: fuchsia;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-.social-li{
     
-    display: inline;
+    .box{
+        width: 260px;
+    height: 220px;       
 }
 
-.social-li img{
-    margin-top: 20px;
-    width: 44px;
-    height: 44px;
+}
+@media screen and (max-width: 650px) {
+    .box{
+        width: 100%;
+        height: 60px;      
+    }      
 }
 
-.li-interactions .margin{
-    margin-top: 25vw;
-}
+
