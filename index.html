@@ -55,7 +55,7 @@
                                 placeholder="Password" required="">
 
                             <div class="row">
-                                <a class="btn btn-link col-md-6" href="#" data-toggle="modal"
+                                <a class="btn btn-link col-md-6" href="#" data-dismiss="modal" data-toggle="modal"
                                     data-target="#modalRegister">Create an account</a>
                                 <a class="btn btn-link col md-6" href="#">Don't remember your password?</a>
                             </div>
@@ -85,9 +85,9 @@
                     <h5 class="modal-title" id="modalLabel">Create an account</h5>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
                 </div>
-                <div class="modal-body" id="info">
+                <div class="modal-body" >
 
-                    <div id="logreg-forms">
+                    <div id="logreg-forms" class="info">
                         <form class="form-signin">
 
                             <div class="container-fluid h-100">
@@ -120,7 +120,7 @@
                             <input style="text-align: center" type="password" id="inputConfPassword"
                                 class="form-control" placeholder="Confirm Password" required="">
 
-                                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> <!--Test key Llave para probar-->
+                                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> <!--Test key Llave para probar captcha-->
 
                             <div>
                                 <label>
@@ -142,7 +142,7 @@
                                                 class="fas fa-sign-in-alt"></i>
                                             Create Account</button>
                                         <div style="padding-top: 35px; font-size: 85%; ">Do you have an account? <a
-                                                style="display: inline;" href="#">
+                                                style="display: inline;" href="#" data-dismiss="modal" data-toggle="modal" data-target="#modalLogin">
 
                                                 Sign in Here!
 
