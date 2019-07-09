@@ -29,6 +29,13 @@ div.col-md-3
 }
 
 
+.box{
+    width: 260px;
+    height: 220px;
+    background-color: blue;
+    margin: 10px;
+}
+
 div.container_modal
 div.column_modal{
     display: flex;
@@ -136,7 +143,26 @@ max-width: 100%;
 #logreg-forms .form-signup input { margin-bottom: 2px;}
 
 
-/* Mobile */
+.table-pink div{
+    text-align: center;
+    height: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    border: solid;
+    border-bottom: none;
+    border-color: black;
+}
+.table-grey div{
+    text-align: center;
+    height: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: solid;
+    border-top: none;
+}
+
+/* Mobile login*/
 
 @media screen and (max-width:500px){
     #logreg-forms3{
@@ -146,18 +172,20 @@ max-width: 100%;
     #logreg-forms .bt-login{
         width: 76.5px;
     }
-    
-
+    .box{
+        width: 85px;
+        height: 85px;
 }
 @media screen and (max-width:450px){
     #logreg-forms .social-btn{
         width: 64px;
         margin-left: 0px;
     }
+  }
 }
 @media screen and (min-width: 500px) {
     .bt-login{
         width: 15vw;
     }
-}
 
+}
