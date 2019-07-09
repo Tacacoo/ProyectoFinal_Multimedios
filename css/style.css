@@ -241,7 +241,7 @@ div.container.row{
     }
   }
 }
-}
+
 @media screen and (min-width: 500px) {
     .bt-login{
         width: 15vw;
