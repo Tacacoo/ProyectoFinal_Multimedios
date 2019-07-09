@@ -14,8 +14,7 @@
 
 <body>
     <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
@@ -46,8 +45,12 @@
                             <div class="container-fluid h-100">
                                 <div class="row w-100 align-items-center">
                                     <div class="col text-center">
-                                        <button class="btn social-btn fb" type="button"><span><img src="https://image.flaticon.com/icons/svg/124/124010.svg" alt="a"></span></button>
-                                        <button class="btn social-btn" type="button"><span><img src="https://image.flaticon.com/icons/svg/124/124013.svg" alt="a"></span></button>
+                                        <button class="btn social-btn fb" type="button"><span><img
+                                                    src="https://image.flaticon.com/icons/svg/124/124010.svg"
+                                                    alt="a"></span></button>
+                                        <button class="btn social-btn" type="button"><span><img
+                                                    src="https://image.flaticon.com/icons/svg/124/124013.svg"
+                                                    alt="a"></span></button>
                                     </div>
                                 </div>
                             </div>
@@ -60,8 +63,9 @@
                                 placeholder="Password" required="">
 
                             <div class="row">
-                                <a class="btn btn-link col-md-6" href="#" id="create_acc">Create an account</a>
-                                <a class="btn btn-link col md-6" href="#" id="forgot_pswd">Don't remember your password?</a>
+                                <a class="btn btn-link col-md-6" href="#" id="btn-signup">Create an account</a>
+                                <a class="btn btn-link col md-6" href="#" id="forgot_pswd">Don't remember your
+                                    password?</a>
                             </div>
                             <div class="container-fluid h-100">
                                 <div class="row w-100 align-items-center">
@@ -74,14 +78,44 @@
                             </div>
                         </form>
 
+                        <form action="/signup/" class="form-signup">
+                            <div class="container-fluid h-100">
+                                <div class="row w-100 align-items-center">
+                                    <div class="col text-center">
+                                        <button class="btn social-btn fb" type="button"><span><img
+                                                    src="https://image.flaticon.com/icons/svg/124/124010.svg"
+                                                    alt="a"></span></button>
+                                        <button class="btn social-btn" type="button"><span><img
+                                                    src="https://image.flaticon.com/icons/svg/124/124013.svg"
+                                                    alt="a"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p style="text-align:center">OR </p>
+
+                            <input style="text-align: center" type="email" id="inputEmail" class="form-control"
+                                placeholder="Username or Email" required="" autofocus="">
+                            <input style="text-align: center" type="password" id="inputPassword" class="form-control"
+                                placeholder="Password" required="">
+
+                            <div class="row">
+                                <a class="btn btn-link col-md-6" id="">Create an account</a>
+                                <a class="btn btn-link col md-6" id="forgot_pswd">Don't remember your password?</a>
+                            </div>
+                            <div class="container-fluid h-100">
+                                <div class="row w-100 align-items-center">
+                                    <div class="col text-center">
+                                        <button class="btn btn-success bt-login" type="submit"><i
+                                                class="fas fa-sign-in-alt"></i>
+                                            Login</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
 
                     </div>
-
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                        crossorigin="anonymous"></script>
-                    <script src="/script.js"></script>
                 </div>
             </div>
         </div>
