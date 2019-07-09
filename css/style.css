@@ -184,6 +184,23 @@ max-width: 100%;
     border-top: none;
 }
 
+/*recipes*/
+
+div.row.table-pink
+{
+    display: flex;
+    background-color: fuchsia;
+}
+
+div.row.table-grey{
+    display: flex;
+    background-color: lightgray;
+}
+
+div.container.row{
+    margin: 0 auto;
+}
+
 /* Mobile login*/
 
 @media screen and (max-width:500px){
@@ -222,6 +239,7 @@ max-width: 100%;
         width: 64px;
         margin-left: 0px;
     }
+  }
 }
 }
 @media screen and (min-width: 500px) {
