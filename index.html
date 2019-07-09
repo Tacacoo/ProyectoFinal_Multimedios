@@ -16,6 +16,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- Barra de navegación -->
+    <header>
+            <div class="site-title">
+                    <h1> Mystery Bakery </h1>
+            </div>
+    </header>
+    <nav class="navbar navbar-inverse navbar-expand-lg navbar-form">
+        <div class="container-fluid">        
+            <form id="searchForm" class="form-inline my-2 my-lg-0">
+                <a class="navbar-brand" href="index.html">Recipes Search Index</a>
+                <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
 
     <div class="col-md-3">
         <div class="well text-center">
@@ -43,6 +57,59 @@
             </div>
         </div>
     </div>
+    <!-- Opciones del menu -->
+    <div class="option-container">
+        <a href="">Option 1</a>
+        <a href="">Option 2</a>
+        <a href="">Option 3</a>
+        <a href="">Option 4</a>
+        <a href="">Option 5</a>
+        <a href="">Option 6</a>
+        <a href="">Option 7</a>
+        <a href="">Option 8</a>
+    </div>  
+    <!-- Imagen principal -->
+    <div class="main-recipe">
+        <img src="http://lorempixel.com/1350/900/food" class="menu-img"/>
+    </div>
+
+    <!-- Catalogo de Recetas-->
+    <div class="recipes-container">
+        <div class="frst-col-recipes">
+            <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img">
+            <img src="http://lorempixel.com/302/200/food" alt="ewe"  class="normal-img">
+            <img src="http://lorempixel.com/301/402/food" alt="wew"  class="bigger-img">
+        </div>
+        <div class="scnd-col-recipes">
+            <img src="http://lorempixel.com/304/210/food" alt="sada" class="normal-img">
+            <img src="http://lorempixel.com/302/220/food" alt="ewe"  class="normal-img">
+            <img src="http://lorempixel.com/301/202/food" alt="wew"  class="normal-img">
+        </div>
+        <div class="thrd-col-recipes">
+            <img src="http://lorempixel.com/301/405/food" alt="sada" class="bigger-img">
+            <img src="http://lorempixel.com/302/201/food" alt="ewe"  class="normal-img">
+            <img src="http://lorempixel.com/301/204/food" alt="wew"  class="normal-img">
+        </div>
+        <div class="fth-col-recipes">
+            <img src="http://lorempixel.com/301/200/food" alt="sada" class="normal-img">
+            <img src="http://lorempixel.com/302/406/food" alt="ewe"  class="bigger-img">
+            <img src="http://lorempixel.com/301/203/food" alt="wew"  class="normal-img">
+        </div>
+
+        <div class="btn-loadMore">
+            <button> Load More </button>
+        </div>
+
+    </div>
+
+    <!-- Footer-->
+    <div id="footer">
+        <div class="frst-col-footer"></div>
+        <div class="scnd-col-footer"></div>
+        <div class="thrd-col-footer"></div>
+    </div>    
+    
+
 </body>
 
 </html>
