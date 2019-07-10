@@ -8,6 +8,7 @@
     <title>asd</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 </head>
 
 <body>
@@ -18,29 +19,39 @@
         crossorigin="anonymous"></script>
     <!-- Barra de navegación -->
     <header>
-            <div class="site-title">
-                    <h1> Mystery Bakery </h1>
-            </div>
+            <link rel="import" href="layout.html">
     </header>
     <nav class="navbar navbar-inverse navbar-expand-lg navbar-form">
         <div class="container-fluid">        
             <form id="searchForm" class="form-inline my-2 my-lg-0">
-                <a class="navbar-brand" href="index.html">Recipes Search Index</a>
+                <a class="navbar-brand" href="index.html"><i class="fas fa-hamburger"></i></a>
                 <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-
-    <div class="col-md-3">
-        <div class="well text-center">
-            <a class="btn btn-primary" href="#" onclick="mostrarLogin()" data-toggle="modal"
-                data-target="#modalLogin">Login</a>
-
-            <a class="btn btn-primary" href="#" onclick="mostrarRegistro()" data-toggle="modal"
-                data-target="#modalRegister">Register</a>
+                <li class="ls-menu"><a class="btn btn-link" href="#" onclick="mostrarLogin()" data-toggle="modal"
+                        data-target="#modalLogin">Login</a></li>
+                
+                <li class="ls-menu"><a class="btn btn-warning" href="#" onclick="mostrarRegistro()" data-toggle="modal"
+                        data-target="#modalRegister">Register</a></li>
+                        
+                <li class="ms-menu">
+                    <div class="dropdown show">
+                        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Register</a>
+                          <a class="dropdown-item" href="#">Login</a>
+                        </div>
+                      </div>  
+                    </li>         
+            </ul>
         </div>
-    </div>
+    </nav>
 
+    <!-- Modal para login -->
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -49,7 +60,7 @@
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
                 </div>
                 <div class="modal-body" id="info">
-                        
+
                 </div>
                 <div class="modal-footer">
 
@@ -70,30 +81,85 @@
     </div>  
     <!-- Imagen principal -->
     <div class="main-recipe">
-        <img src="http://lorempixel.com/1350/900/food" class="menu-img"/>
+        <img src="http://lorempixel.com/1500/1000/food" class="menu-img"/>
+        
     </div>
 
     <!-- Catalogo de Recetas-->
-    <div class="recipes-container">
+    <div class="container recipes">
+        <div class="filter">
+            <p>Sort by: <span><a class="dropbtn" href="">Relevance</a></p>
+        </div>
         <div class="frst-col-recipes">
-            <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img">
-            <img src="http://lorempixel.com/302/200/food" alt="ewe"  class="normal-img">
-            <img src="http://lorempixel.com/301/402/food" alt="wew"  class="bigger-img">
+           <div > <img src="http://lorempixel.com/200/209/food" alt="sada" class="normal-img"> 
+            <h5> Recipe name</h5>
+            <h6>By Admin</h6>
+            <i class="fas fa-heart"></i>
+            </div> 
+            <div ><img src="http://lorempixel.com/200/209/food" alt="sada" class="normal-img"> 
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div> 
+            <div>
+                <i class="fas fa-heart like-top"></i>
+                <img src="http://lorempixel.com/200/409/food" alt="sada" class="bigger-img"> 
+            </div>         
         </div>
         <div class="scnd-col-recipes">
-            <img src="http://lorempixel.com/304/210/food" alt="sada" class="normal-img">
-            <img src="http://lorempixel.com/302/220/food" alt="ewe"  class="normal-img">
-            <img src="http://lorempixel.com/301/202/food" alt="wew"  class="normal-img">
+            <div >
+                <i class="fas fa-star favorite-top"></i> 
+                <img src="http://lorempixel.com/200/200/food" alt="sada" class="favorite-img"> 
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+            </div> 
+            <div> 
+                <img src="http://lorempixel.com/200/200/food" alt="sada" class="normal-img"> 
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart "></i>
+            </div> 
+            <div> 
+                <img src="http://lorempixel.com/200/200/food" alt="sada" class="normal-img"> 
+                    <h5> Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <i class="fas fa-heart "></i>
+                </div> 
         </div>
         <div class="thrd-col-recipes">
-            <img src="http://lorempixel.com/301/405/food" alt="sada" class="bigger-img">
-            <img src="http://lorempixel.com/302/201/food" alt="ewe"  class="normal-img">
-            <img src="http://lorempixel.com/301/204/food" alt="wew"  class="normal-img">
+            <div class="bigger-img-div">
+                <i class="fas fa-heart like-top"></i> 
+                <img src="http://lorempixel.com/205/405/food" alt="sada" class="bigger-img"> 
+                </div> 
+                <div > <img src="http://lorempixel.com/205/205/food" alt="sada" class="normal-img"> 
+                    <h5> Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <i class="fas fa-heart"></i>
+                </div> 
+                <div>
+                    <img src="http://lorempixel.com/205//food" alt="sada" class="normal-img"> 
+                    <h5> Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <i class="fas fa-heart"></i>
+                </div>
         </div>
         <div class="fth-col-recipes">
-            <img src="http://lorempixel.com/301/200/food" alt="sada" class="normal-img">
-            <img src="http://lorempixel.com/302/406/food" alt="ewe"  class="bigger-img">
-            <img src="http://lorempixel.com/301/203/food" alt="wew"  class="normal-img">
+            <div > 
+                <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div> 
+            <div class="bigger-img-div"> 
+                <i class="fas fa-heart like-top"></i>
+                <img src="http://lorempixel.com/230/410/food" alt="sada" class="bigger-img"> 
+            </div> 
+            <div>
+                <img src="http://lorempixel.com/300/219/food" alt="sada" class="normal-img"> 
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
         </div>
 
         <div class="btn-loadMore">
@@ -104,9 +170,43 @@
 
     <!-- Footer-->
     <div id="footer">
-        <div class="frst-col-footer"></div>
-        <div class="scnd-col-footer"></div>
-        <div class="thrd-col-footer"></div>
+        <div class="frst-col-footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio praesentium ad eum, ullam, quibusdam deleniti expedita dicta culpa earum sit sapiente illum est qui vitae explicabo debitis blanditiis sint.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in asperiores. Cupiditate, incidunt aliquid velit officia accusamus modi hic obcaecati quo eos libero labore commodi, doloremque accusantium dignissimos esse dicta!</p>
+        </div>
+        <div class="scnd-col-footer">
+            <hgroup>
+                <h3> Categories </h3>
+                <h6> Categorie 1 </h6>
+                <h6> Categorie 2 </h6>
+                <h6> Categorie 3 </h6>
+                <h6> Categorie 4 </h6>
+                <h6> Categorie 5 </h6>
+            </hgroup>
+        </div>
+        <div class="thrd-col-footer">
+            <h3>Recent</h3>
+            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep 2018</p>
+            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep 2018</p>
+            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep 2018</p>
+        </div>
+        <div class="legal-term-footer">
+            <a >
+              2019- ALL RIGHTS RESERVED  
+            </a>  
+            <a class="rights-term-right">
+                PRIVACY POLICY 
+            </a> 
+            <a>
+                TERMS OF SERVICE  
+            </a> 
+            <a>
+                ACCEPTABLE USER POLICY
+            </a>  
+            <a>
+                SERVICE LEVEL AGREEMENT  
+            </a> 
+        </div>
     </div>    
     
 
