@@ -840,12 +840,12 @@ h6{
     float: right;
 }
 
-/* ESTILOS DEL CONTENDOR DE CATEGORIAS DE SEARCH FILTERS*/
+/* ESTILOS DE LA PÁGINA SEARCH FILTERS*/
 
 .categories{
     margin-bottom: 5%;
     margin-top: 5%;
-    height: 40px;
+    height: 100%;
     border-style: ridge;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -857,20 +857,12 @@ h6{
     background-color: orangered;
 }
 
-/* ESTILOS DEL CONTENDOR DE CATEGORIAS DE SEARCH FILTERS*/
 .categorie-container{
     display: flex;
+    height: 100%;
     width: 100%;
-    justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-style: ridge;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    border-top-right-radius : 15px;
-    border-top-left-radius : 15px;
-    border-bottom-left-radius : 15px;
-    border-bottom-right-radius : 15px;
+    padding: 0% 7% 0% 5%;
+    margin: auto;
 }
 
 .col.searched{
@@ -884,12 +876,16 @@ h6{
     width: 100%;
 }
 
+.navbar.categories{
+    width: 100%;
+}
+
 .container.recipe-searched{
     max-width: 1300px;
 }
 
 .navbar-right .ls-menu{
-    margin-left:1%; 
+    padding-right:10px;
 }
 .nav-line{
     border-right-style: double;
