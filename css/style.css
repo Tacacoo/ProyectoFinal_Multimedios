@@ -1,15 +1,7 @@
 *{
-    padding: 0 auto;
     margin: 0 auto;
+    padding:0 ;
 }
-.col-md-8{
-    margin-left: 0px;
-    padding-left: 47px;
-    border-left-width: 0px;
-    border-left-style: solid;
-    padding-right: 0px;
-}
-
 .modal-dialog {
     max-width: 850px;
 }
@@ -36,12 +28,13 @@ div.column_modal{
 }
 
 .site-title h1{
-    padding-top: 1;
+    padding-top: 1%;
     font-size: 20px;
 }
 
 .navbar{
     border-bottom-style:double;
+    width:100%;
 }
 
 .dropdown.navbar{
@@ -73,14 +66,60 @@ div.column_modal{
 .main-recipe .menu-img{
     width: 100%;
     max-height: 600px;
+    object-fit: cover;
 }
 
-.container.recipes{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.recipe-container{
+    height: auto;
+}
+
+.recipe{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.recipe-normal i{
+    float: right;
+    width: 30px;
+    height: 40px;
+}
+
+.recipe-normal{
+    height: auto;
+    border-style: solid;
+    margin: 5% 5% 5% 5%;
+    padding: 0;
     width: 100%;
-    height: 100%;
+}
+
+.recipe-normal img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.recipe-bigger{
+    height: auto;
+    border-style: solid;
+    margin: 5% 5% 5% 5%;
+    padding: 0;
+    width: 100%;
+}
+.recipe-bigger .details{
+    position: absolute;
+    font-size: xx-large;
+}
+
+.main-recipe .details{
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    font-size: xx-large;
+}
+
+.recipe-bigger img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .filter{
@@ -109,80 +148,15 @@ div.column_modal{
     font-size: 16px;
     border: none;
   }
-  
-.frst-col-recipes{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 20%;
-    margin-left: 3%;
-}
-.frst-col-recipes div{
-    border-style: solid;
-    margin-top: 10px;
-    max-width: 400px;
-}
-.scnd-col-recipes div{
-    border-style: solid;
-    margin-top: 10px;
-}
-.thrd-col-recipes div{
-    border-style: solid;
-    margin-top: 10px;
-}
-.fth-col-recipes div{
-    border-style: solid;
-    margin-top: 10px;
-}
-.frst-col-recipes i{
-    float: right;
-    width: 30px;
-    height: 40px;
-}
-.scnd-col-recipes i{
-    float: right;
 
-}
-.thrd-col-recipes i{
-    float: right;
-    width: 30px;
-    height: 40px;
-}
-.fth-col-recipes i{
-    float: right;
-    width: 30px;
-    height: 40px;
-}
 .h5{
     color: black;
 }
-.scnd-col-recipes{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    margin-top: 2%;
-    margin-left: 5%;
-
-}
-
-.thrd-col-recipes{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    margin-top: 2%;
-    margin-left: 5%;
-}
-
-.fth-col-recipes{
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    margin-top: 2%;
-    width: 20%;
-}
 
 .btn-loadMore{
-    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
 }
 
 .btn-loadMore button{
@@ -191,32 +165,22 @@ div.column_modal{
     width: 100px;
     color: whitesmoke;
     border-radius: 15%;
-}
-.normal-img{
-    height: 200;
-    width: 100%;
-    
-}
-
-.bigger-img{
-    height: 400px;
-    width: 100%;
-}
-
-.favorite-img{
-    height: 200;
-    width: 100%;
+    margin-top: 2%;
 }
 
 .like-top{
     position: absolute;
-    margin-left: 15%;
+    padding-left: 10%;
+    right: 10%;
+    font-size: 30px;
+
 }
 
 .favorite-top{
     position: absolute;
-    margin-left: 10%;
-
+    top:2%;
+    right: 12%;
+    font-size: 30px;
 }
 #footer{
     display: flex;
@@ -226,14 +190,11 @@ div.column_modal{
     width: 100%;
     background-color: gray;
     opacity: 0.5;
-    margin-top: 10%;
 }
 
 .frst-col-footer{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-left: 5%;
     width: 28%;
     margin-top: 3%;
 }
@@ -241,15 +202,16 @@ div.column_modal{
 .scnd-col-footer{
     display: flex;
     flex-direction: column;
+
     width: 28%;
-    margin-left: 5%;
     margin-top: 3%;
 }
 
 .thrd-col-footer{
     display: flex;
     flex-direction: column;
-    width: 33%;
+    
+    width: 28%;
     margin-top: 3%;
 
 }
@@ -315,36 +277,21 @@ h6{
         flex-direction: column;
         align-items: center;
     }
-    .thrd-col-footer{
-        margin-left: 10%;
-    }
 
     .rights-term-right{
         margin-left: 0%;
     }
-    .fth-col-recipes{
+    .last{
         display: none;
     }
 
 }
 
-.row{
-    height: 70px;
-}
 
 .search-form {
     float: right;
 }
 
-
-.row {
-    height: 40%;
-}
-
-div.col{
-    border-style: solid;
-    margin: 5px 5px 5px 5px;
-}
 
 .categories{
     margin-left: 5%;
@@ -367,3 +314,4 @@ div.col{
 a.btn{
     align-self: center;
 }
+
