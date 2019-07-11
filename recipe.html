@@ -14,13 +14,13 @@
 
 <body>
     <div class="jumbotron">
-        <h3 class="text-center">Recipe Name</h3>
+        <h3 class="recipe-title text-center">Recipe Name</h3>
         <br>
         <br>
         <div class="row">
             <div class="col-6" style="display: flexbox;">
                 <div style="display: flex;">
-                    <img src="https://i.pinimg.com/originals/61/d4/75/61d4757b34d2f6a1943c3d8e8f3f4248.jpg"
+                    <img src="http://lorempixel.com/650/900/food/5"
                         alt="gallo pinto">
                 </div>
             </div>
@@ -31,18 +31,19 @@
                     <div class="col-6">
                         <div>
                             <ul class="li-ingredients">
-                                <li class="font-disp">Item 1</li>
-                                <li class="font-disp">Item 2</li>
-                                <li class="font-disp">Item 3</li>
-                                <li class="font-disp">Item 4</li>
-                                <li class="font-disp">Item 5</li>
-                                <li class="font-disp">Item 6</li>
-                                <li class="font-disp">Item 7</li>
+                                <li class="font-disp">Item1</li>
+                                <li class="font-disp">Item2</li>
+                                <li class="font-disp">Item3</li>
+                                <li class="font-disp">Item4</li>
+                                <li class="font-disp">Item5</li>
+                                <li class="font-disp">Item6</li>
+                                <li class="font-disp">Item7</li>
                             </ul>
                         </div>
+                        <p class="paragraph">By Admin</p>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-6" style="display: flex;">
                         <div class="interactions">
                             <ul class="li-interactions">
                                 <li><a class="font-disp margin"><i class="fa fa-heart"></i> 42k</a></li>
@@ -51,18 +52,19 @@
                         </div>
                     </div>
 
-                    <p>By Admin</p>
+                    
 
                 </div>
 
                 <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    <span class="fa fa-star fa-2x" id="star1" onclick="add(this,1)"></span>
+                    <span class="fa fa-star fa-2x" id="star2" onclick="add(this,2)"></span>
+                    <span class="fa fa-star fa-2x" id="star3" onclick="add(this,3)"></span>
+                    <span class="fa fa-star fa-2x" id="star4" onclick="add(this,4)"></span>
+                    <span class="fa fa-star fa-2x" id="star5" onclick="add(this,5)"></span>
                     
                 </div>
+                <div class="container-fluid">
                 <div class="row" style="display: flex;">
                     <div class="col-4">
                         <button type="button" class="btn btn-outline btn-block bt-tag">Tag</button>
@@ -91,6 +93,7 @@
                     <div class="col-8">
                         <button type="button" class="btn btn-outline btn-block bt-tag">Tag Longer</button>
                     </div>
+                </div>
                 </div>
                 <div class="row">
                     <div class="social-li">
@@ -177,8 +180,8 @@
 
     <div class="jumbotron">
         <h3>Related</h3>
-        <div class="container" style="display: flexbox">
-            <div class="row">
+        <div class="container" >
+            <div class="row" style="display: flexbox;">
                 <div class="col box"><a href="#"><img class="related-img"
                             src="https://www.chatelaine.com/wp-content/uploads/2016/12/Nachos-with-beans-and-chorizo.jpg"
                             alt="Nachos"></a></div>
@@ -267,6 +270,10 @@
             </article>
         </div>
     </div>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
