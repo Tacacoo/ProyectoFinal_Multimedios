@@ -1,9 +1,5 @@
-*{
-    margin: 0 auto;
-    padding:0 ;
-    text-align: justify;
-}
-.modal-dialog {
+
+.modal-dialog { /*Tamaño del*/
     max-width: 850px;
 }
 
@@ -15,22 +11,22 @@
 
 div.container_modal
 div.column_modal{
-    display: flex;
+    display: flex;/*Flex para que varie el tamaño*/
     flex-direction: row;
     padding: 100px;
 }
 
 .site-title{
     display: flex;
-    justify-content: center;
+    justify-content: center;/*Para que sus elementos que alinien al centro*/
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: black;/*Color de fondo*/
 }
 
 .site-title h1{
-    padding-top: 1%;
-    font-size: 20px;
+    padding-top: 1%;/*Espaciado hacia arriba*/
+    font-size: 20px; /*Tamaño de la fuente al titulo*/
 }
 
 .navbar{
@@ -296,43 +292,6 @@ a.btn{
     align-self: center;
 }
 
-
-/*login & register*/
-.info{
-    border: 0;
-    box-shadow: 0;
-}
-
-div.container.aboutUs,
-div.col-md-3
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    padding: 20px;
-    
-}
-.col-md-8{
-    margin-left: 0px;
-    padding-left: 47px;
-    border-left-width: 0px;
-    border-left-style: solid;
-    padding-right: 0px;
-}
-.modal-dialog {
-    max-width: 850px;
-}
-
-
-
-div.container_modal
-div.column_modal{
-    display: flex;
-    flex-direction: row;
-    padding: 100px;
-}
-/*about*/
 article.avatar{
     padding: 20px;   
 }
@@ -346,13 +305,52 @@ article.avatar img {
     margin: 0 auto; 
 }
 
-img:hover {
+img:hover {/*Para que cambie si el mouse para por encima*/
     box-shadow: 0 0 2px 1px rgba(24, 25, 26, 0.5);
   }
 
 div.container.row.touch{
 max-width: 100%;
 }
+
+/*Modal login and register*/
+
+.info{ 
+    border: 0;
+    box-shadow: 0;
+}
+
+div.container.aboutUs,
+div.col-md-3
+{ /*login & register*/
+    display: flex; /*Flex para que se ajuste si cmabia de tamaño*/
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.col-md-8{
+    margin-left: 0px;
+    padding-left: 47px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    padding-right: 0px;
+}
+
+.modal-dialog { /*Tamaño del modal*/
+    max-width: 850px;
+}
+
+
+
+div.container_modal
+div.column_modal{ /*Comportamiento y responsividad*/
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+/*about*/
 
 .col-6 .paragraph{
     font-size: 1.0rem;
@@ -403,39 +401,39 @@ max-width: 100%;
 }
 
 #logreg-forms .form-control:focus { z-index: 2; }
-#logreg-forms .form-signin input[type="email"] {
+#logreg-forms .form-signin input[type="email"] { /*Formato y estilos del campo email*/
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-#logreg-forms .form-signin input[type="password"] {
+#logreg-forms .form-signin input[type="password"] { /*Formato y  estilos del campo password*/
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
-#logreg-forms .social-login{
+#logreg-forms .social-login{ /*Tamaño del contenedor los iconos de las redes sociales*/
     width:390px;
     margin-bottom: 14px;
     margin-left: 35px;
 }
 
-#logreg-forms .social-btn{
+#logreg-forms .social-btn{ /*Tamaño de los botones*/
     width:84px;
     margin-left: 60px;
 }
 
-#logreg-forms .fb{
+#logreg-forms .fb{ /*Modal de registro y login*/
     margin-left: 30px !important;
 }
 
-#logreg-forms a{
+#logreg-forms a{ /*color de los links a modals crear cuenta o logearse*/
     display: block;
     padding-top:10px;
     color:lightseagreen;
 }
 
-#logreg-form .lines{
+#logreg-form .lines{ /*si falla en algo se pone de este color y se aplica este estilo*/
     width:200px;
     border:1px solid red;
 }
@@ -444,31 +442,31 @@ max-width: 100%;
     width: 15vw;
 }
 
-#logreg-forms .login-links{
+#logreg-forms .login-links{ /*Links alineados al centro*/
     text-align: center;
 }
 
-#logreg-forms button[type="submit"]{ margin-top:10px; }
+#logreg-forms button[type="submit"]{ margin-top:10px; } /*estilo del boton enviar o logiearse*/
 
 
 #logreg-forms .form-reset, #logreg-forms .form-signup{ display: none; }
 
-#logreg-forms .form-signup .social-btn{ width:210px; }
+#logreg-forms .form-signup{ width:210px; }
 
 #logreg-forms .form-signup input { margin-bottom: 2px;}
 
 
-.table-pink div{
-    text-align: center;
+.table-pink div{ /*Tabla roosada*/
+    text-align: center;/*alinear texto al centro*/
     height: 30px;
     font-weight: bold;
     font-size: 1rem;
     color: #fff;
     border: solid;
-    border-bottom: none;
+    border-bottom: none; /*sin borde abajo*/
     border-color: black;
 }
-.table-grey div{
+.table-grey div{/*tabla gris*/
     text-align: center;
     height: 30px;
     font-weight: bold;
@@ -478,11 +476,11 @@ max-width: 100%;
 }
 
 /*recipe*/
-.checked {
+.checked { /*Rate si presiona una estrella se pone color naranja*/
     color: orange;
 }
 
-.bt-tag{
+.bt-tag{ /*Botonoes rosados de las etiquetas #algo*/
     color: fuchsia;
     border-width: 2.5px;
     border-color: fuchsia;
@@ -490,64 +488,64 @@ max-width: 100%;
     margin-top: 20px;
 }
 
-.social-li{
+.social-li{ /*para que se muestre en linea los likes y los vistos*/
     
     display: inline;
 }
 
-.social-li img{
+.social-li img{ /*tamaño de las imagenes*/
     margin-top: 20px;
     width: 44px;
     height: 44px;
 }
 
-.li-interactions .margin{
+.li-interactions .margin{ /*aplicar margen entre las interaciones*/
     margin-top: 25vw;
 }
-.related-img{
+.related-img{ /*tamaño de las imagenes de la seccion related*/
     width: 100%;
     height: 100%;
 }
-.jumbotron .recipe-title{
+.jumbotron .recipe-title{ /*tamaño del titulo del elemetno de la clase jumbotron*/
     font-size: 1.75rem;
 }
 
 /* Mobile login*/
-
+/*MEDIA QUERIES PARA AJUSTAR EL LOGIN Y REGISTER ASI COMO LA PAGINA RECIPE PROFILE*/
 @media screen and (max-width:500px){
-    #logreg-forms3{
+    #logreg-forms3{ /*ajusta el tamaño*/
         max-width:300px;
     }
 
     #logreg-forms .bt-login{
         width: 76.5px;
     }
-.bt-tag{
+.bt-tag{/*les cambia el tamaño de la fuente y el borde*/
     font-size: 6px;
     margin: 0px;
     border-width: 1.8px
 }
-.font-disp{
+.font-disp{ /*tamaño de la letra se la pantalla es mas pequeña a 500px*/
     font-size: 2.5vw;
     margin-left: 0px;
     margin-right: 0px;
 }
-.col-6 .paragraph{
-    font-size: 0.5rem;
+.col-6 .paragraph{ /*Tmaño de la letra de los parragos*/
+    font-size: 1rem;
 }
-.jumbotron .recipe-title{
+.jumbotron .recipe-title{ /*Tamaño del titulo*/
     font-size: 1.0rem;
 }
 .jumbotron .col-6 h3{
     font-size: 3.5vw;
 }
 
-.social-li img{
+.social-li img{ /*Ajustar tamaño de las imagenes que no estan edntor de un diplay flex*/
     width: 24px;
     height: 24px;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:450px){ 
     #logreg-forms .social-btn{
         width: 64px;
         margin-left: 0px;
@@ -562,7 +560,7 @@ max-width: 100%;
 @media screen and (min-width: 500px) {
     .bt-login{
         width: 15vw;
-    }
+    }/*cambiar el tamaño del boton segun cambia o se ajusta la vista*/
 
 }
 
@@ -689,7 +687,7 @@ max-width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-
+s
 .dropbtn {
     color: white;
     padding: 16px;
@@ -839,6 +837,64 @@ h6{
 .search-form {
     float: right;
 }
+
+/* ESTILOS DE LA PÁGINA SEARCH FILTERS*/
+
+.categories{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    height: 100%;
+    border-style: ridge;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.categories a:hover{
+    background-color: orangered;
+}
+
+.categorie-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0% 7% 0% 5%;
+    margin: auto;
+}
+
+.col.searched{
+    margin-right: 3%;
+    margin-bottom: 3%;
+    border-style: solid;
+    padding: 0;
+}
+
+.col.searched img{
+    width: 100%;
+}
+
+.navbar.categories{
+    width: 100%;
+}
+
+.container.recipe-searched{
+    max-width: 1300px;
+}
+
+.navbar-right .ls-menu{
+    padding-right:10px;
+}
+.nav-line{
+    border-right-style: double;
+    width: 27%;
+    height: 100%;
+}
+
+a.btn{
+    align-self: center;
+}
+
 
 /* ESTILOS DE LA PÁGINA SEARCH FILTERS*/
 

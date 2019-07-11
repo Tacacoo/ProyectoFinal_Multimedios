@@ -13,24 +13,25 @@
 </head>
 
 <body>
-    <div class="jumbotron">
+
+    <div class="jumbotron"><!--Aqui va la imagen y la lista de ingredientes-->
         <h3 class="recipe-title text-center">Recipe Name</h3>
         <br>
         <br>
         <div class="row">
-            <div class="col-6" style="display: flexbox;">
+            <div class="col-6" style="display: flexbox;"><!--Display flex para que se ajuste si se cambia el tamaño-->
                 <div style="display: flex;">
-                    <img src="http://lorempixel.com/650/900/food/5"
+                    <img src="http://lorempixel.com/650/900/food/5" 
                         alt="gallo pinto">
                 </div>
             </div>
 
-            <div class="col-6" style="display: flexbox;">
+            <div class="col-6" style="display: flexbox;"><!--Display flex para que se ajuste si se cambia el tamaño-->
                 <h3>Ingredients</h3>
                 <div class="row" style="display: flex;">
                     <div class="col-6">
                         <div>
-                            <ul class="li-ingredients">
+                            <ul class="li-ingredients">             <!--Lista de ingredientes-->
                                 <li class="font-disp">Item1</li>
                                 <li class="font-disp">Item2</li>
                                 <li class="font-disp">Item3</li>
@@ -43,9 +44,9 @@
                         <p class="paragraph">By Admin</p>
                     </div>
 
-                    <div class="col-6" style="display: flex;">
+                    <div class="col-6" style="display: flex;"> <!--Display flex para que se ajuste si se cambia el tamaño-->
                         <div class="interactions">
-                            <ul class="li-interactions">
+                            <ul class="li-interactions"> <!--Interacciones-->
                                 <li><a class="font-disp margin"><i class="fa fa-heart"></i> 42k</a></li>
                                 <li><a class="font-disp"><i class="fa fa-eye"></i>22k</a></li>
                             </ul>
@@ -56,18 +57,18 @@
 
                 </div>
 
-                <div class="rate">
-                    <span class="fa fa-star fa-2x" id="star1" onclick="add(this,1)"></span>
+                <div class="rate"> <!--Barra de estrellas para poder darle puntaje-->
+                    <span class="fa fa-star fa-2x" id="star1" onclick="add(this,1)"></span> <!--fa fa-star es un icono de pont awesome-->
                     <span class="fa fa-star fa-2x" id="star2" onclick="add(this,2)"></span>
                     <span class="fa fa-star fa-2x" id="star3" onclick="add(this,3)"></span>
                     <span class="fa fa-star fa-2x" id="star4" onclick="add(this,4)"></span>
                     <span class="fa fa-star fa-2x" id="star5" onclick="add(this,5)"></span>
                     
                 </div>
-                <div class="container-fluid">
-                <div class="row" style="display: flex;">
-                    <div class="col-4">
-                        <button type="button" class="btn btn-outline btn-block bt-tag">Tag</button>
+                <div class="container-fluid"> <!--Contenedir que se ajusta-->
+                <div class="row" style="display: flex;"> <!--Display flex para que se ajuste si se cambia el tamaño-->
+                    <div class="col-4"> <!--Formato de columnas de bootstrap-->
+                        <button type="button" class="btn btn-outline btn-block bt-tag">Tag</button> <!--Etiquetas del objeto-->
                     </div>
                     <div class="col-4">
                         <button type="button" class="btn btn-outline btn-block bt-tag">Tag</button>
@@ -77,7 +78,7 @@
                     </div>
                 </div>
 
-                <div class="row" style="display: flex;">
+                <div class="row" style="display: flex;"><!--Display flex para que se ajuste si se cambia el tamaño-->
                     <div class="col-8">
                         <button type="button" class="btn btn-outline btn-block bt-tag">Tag Longer</button>
                     </div>
@@ -86,18 +87,18 @@
                     </div>
                 </div>
 
-                <div class="row" style="display: flex;">
+                <div class="row" style="display: flex;"><!--Display flex para que se ajuste si se cambia el tamaño-->
                     <div class="col-4">
                         <button type="button" class="btn btn-outline btn-block bt-tag">Tag</button>
                     </div>
-                    <div class="col-8">
+                    <div class="col-8"> <!--Formato de columnas de bootstrap-->
                         <button type="button" class="btn btn-outline btn-block bt-tag">Tag Longer</button>
                     </div>
                 </div>
                 </div>
-                <div class="row">
-                    <div class="social-li">
-                        <a href="#"><img class="face" src="https://image.flaticon.com/icons/svg/124/124010.svg"></a>
+                <div class="row"> <!--Crear filas-->
+                    <div class="social-li"> <!--Iconos de las redes sociales-->
+                        <a href="#"><img class="face" src="https://image.flaticon.com/icons/svg/124/124010.svg"></a> 
                         <a href="#"><img class="twitt" src="https://image.flaticon.com/icons/svg/124/124021.svg"></a>
                         <a href="#"><img class="tele" src="https://image.flaticon.com/icons/svg/1532/1532545.svg"></a>
                     </div>
@@ -106,7 +107,7 @@
         </div>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron"> <!--Bloque de instrucciones-->
         <h3>Instructions</h3>
         <article class="container">
 
@@ -156,7 +157,7 @@
             mind it.
             <br>
             <br>
-            <div class="container " style="display: flexbox">
+            <div class="container " style="display: flexbox"> <!--Cuadro rosado y gris-->
                 <div class="row table-pink" style="display: flex; background-color: fuchsia;">
                     <div class="col">Item1</div>
                     <div class="col">Item2</div>
@@ -180,8 +181,8 @@
 
     <div class="jumbotron">
         <h3>Related</h3>
-        <div class="container" >
-            <div class="row" style="display: flexbox;">
+        <div class="container" > <!--Cuadro de imagenes relacionadas-->
+            <div class="row" style="display: flexbox;"> <!--Display flex para que se ajuste si se cambia el tamaño-->
                 <div class="col box"><a href="#"><img class="related-img"
                             src="https://www.chatelaine.com/wp-content/uploads/2016/12/Nachos-with-beans-and-chorizo.jpg"
                             alt="Nachos"></a></div>
@@ -206,13 +207,13 @@
         <div class="container">
             <article class="avatar">
 
-                <div class="row" style="display: flexbox;">
+                <div class="row" style="display: flexbox;"> <!--Display flex para que se ajuste si se cambia el tamaño-->
                     <div class="col-lg-2">
                         <a href="contact.html"><img src="/source/rique.jpeg" alt="MANROK"></a>
                     </div>
 
-                    <div class="col-lg-10">
-                        <h4 style="display: inline">Admin </h4><a href="#"> 6 sep 2018</a>
+                    <div class="col-lg-10"> <!--Contacto-->
+                        <h4 style="display: inline">Admin </h4><a href="#"> 6 sep 2018</a> <!--Display inline para que se ajuste en linea-->
                         <p>
                             Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Ex nihil quam explicabo sequi iste consequuntur, quis vero quo vel illo
@@ -273,7 +274,7 @@
     <script
 			  src="https://code.jquery.com/jquery-3.4.1.min.js"
 			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			  crossorigin="anonymous"></script>
+			  crossorigin="anonymous"></script> <!--Referecia CDN a jquery para poder utilizar las estrellas del rate-->
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
