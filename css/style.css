@@ -1,15 +1,39 @@
 *{
+    text-align: justify;
+}
+/*login & register*/
+.info{
+    border: 0;
+    box-shadow: 0;
+}
+
+div.container.aboutUs,
+div.col-md-3
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin: 0 auto;
-    padding:0 ;
+    padding: 20px;
+    
+}
+.col-md-8{
+    margin-left: 0px;
+    padding-left: 47px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    padding-right: 0px;
 }
 .modal-dialog {
     max-width: 850px;
 }
 
-.modal-title
-.modal-footer {
-    margin: 0 auto;
-   
+
+.box{
+    width: 260px;
+    height: 110px;
+    background-color: transparent;
+    margin: 10px;
 }
 
 div.container_modal
@@ -17,6 +41,241 @@ div.column_modal{
     display: flex;
     flex-direction: row;
     padding: 100px;
+}
+/*about*/
+article.avatar{
+    padding: 20px;   
+}
+
+article.avatar img {
+    border-radius: 50%;
+    border: 4px solid #bbbbbb;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto; 
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(24, 25, 26, 0.5);
+  }
+
+div.container.row.touch{
+max-width: 100%;
+}
+
+/*Modal*/
+#logreg-forms{
+    width:100%;
+    margin:2vh auto;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#logreg-forms form {
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
+}
+
+#logreg-forms .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.li-ingredients{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 30px
+}
+
+.font-disp{
+    font-size: 1.3vw;
+}
+.li-ingredients li{
+    margin-top: 25px;
+}
+.li-interactions{
+    list-style: none;
+    font-size: 1rem !important;
+    display: flexbox;
+}
+.li-interactions li{
+    display: inline-flex;
+    margin-left: 10px;
+    font-size: 1.3rem !important;
+}
+
+#logreg-forms .form-control:focus { z-index: 2; }
+#logreg-forms .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#logreg-forms .form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#logreg-forms .social-login{
+    width:390px;
+    margin-bottom: 14px;
+    margin-left: 35px;
+}
+
+#logreg-forms .social-btn{
+    width:84px;
+    margin-left: 60px;
+}
+
+#logreg-forms .fb{
+    margin-left: 30px !important;
+}
+
+#logreg-forms a{
+    display: block;
+    padding-top:10px;
+    color:lightseagreen;
+}
+
+#logreg-form .lines{
+    width:200px;
+    border:1px solid red;
+}
+
+#logreg-form.bt-login{
+    width: 15vw;
+}
+
+#logreg-forms .login-links{
+    text-align: center;
+}
+
+#logreg-forms button[type="submit"]{ margin-top:10px; }
+
+
+#logreg-forms .form-reset, #logreg-forms .form-signup{ display: none; }
+
+#logreg-forms .form-signup .social-btn{ width:210px; }
+
+#logreg-forms .form-signup input { margin-bottom: 2px;}
+
+
+.table-pink div{
+    text-align: center;
+    height: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    border: solid;
+    border-bottom: none;
+    border-color: black;
+}
+.table-grey div{
+    text-align: center;
+    height: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: solid;
+    border-top: none;
+}
+
+/*recipe*/
+.checked {
+    color: orange;
+}
+
+.bt-tag{
+    color: fuchsia;
+    border-width: 2.5px;
+    border-color: fuchsia;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.social-li{
+    
+    display: inline;
+}
+
+.social-li img{
+    margin-top: 20px;
+    width: 44px;
+    height: 44px;
+}
+
+.li-interactions .margin{
+    margin-top: 25vw;
+}
+.related-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Mobile login*/
+
+@media screen and (max-width:500px){
+    #logreg-forms3{
+        max-width:300px;
+    }
+
+    #logreg-forms .bt-login{
+        width: 76.5px;
+    }
+    .box{
+    width: 100%;
+    height: 60px;      
+}
+
+.font-disp{
+    font-size: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.jumbotron .col-6 h3{
+    font-size: 3.5vw;
+}
+.rate{
+    margin-top: 20px;
+}
+
+.social-li img{
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width:450px){
+    #logreg-forms .social-btn{
+        width: 64px;
+        margin-left: 0px;
+    }
+    .social-li img{
+        width: 24px;
+        height: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+    .bt-login{
+        width: 15vw;
+    }
+    
+    .box{
+        width: 260px;
+    height: 220px;       
+}
+
+}
+@media screen and (max-width: 650px) {
+    .box{
+        width: 100%;
+        height: 60px;      
+    }      
 }
 
 .site-title{
