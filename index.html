@@ -8,6 +8,7 @@
     <title>Recetas de mi abuela</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CND icons-->
 </head>
@@ -16,39 +17,40 @@
     <!-- Barra de navegación -->
     <header>
         <link rel="import" href="layout.html">
-</header>
-<nav class="navbar navbar-inverse navbar-expand-lg navbar-form">
-    <div class="container-fluid">        
-        <form id="searchForm" class="form-inline my-2 my-lg-0">
-            <a class="navbar-brand" href="index.html"><i class="fas fa-hamburger"></i></a>
-            <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-            <li class="ls-menu"><a class="btn btn-link" href="#" onclick="mostrarLogin()" data-toggle="modal"
-                    data-target="#modalLogin">Login</a></li>
-            
-            <li class="ls-menu"><a class="btn btn-warning" href="#" onclick="mostrarRegistro()" data-toggle="modal"
-                    data-target="#modalRegister">Register</a></li>
-                    
-            <li class="ms-menu">
-                <div class="dropdown show">
-                    <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                  
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Register</a>
-                      <a class="dropdown-item" href="#">Login</a>
+    </header>
+    <nav class="navbar navbar-inverse navbar-expand-lg navbar-form">
+        <div class="container-fluid">
+            <form id="searchForm" class="form-inline my-2 my-lg-0">
+                <a class="navbar-brand" href="index.html"><i class="fas fa-hamburger"></i></a>
+                <input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="ls-menu"><a class="btn btn-link" href="#" onclick="mostrarLogin()" data-toggle="modal"
+                        data-target="#modalLogin">Login</a></li>
+
+                <li class="ls-menu"><a class="btn btn-warning" href="#" onclick="mostrarRegistro()" data-toggle="modal"
+                        data-target="#modalRegister">Register</a></li>
+
+                <li class="ms-menu">
+                    <div class="dropdown show">
+                        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Register</a>
+                            <a class="dropdown-item" href="#">Login</a>
+                        </div>
                     </div>
-                  </div>  
-                </li>         
-        </ul>
-    </div>
-</nav>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!--Modal login -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
+    <div class="modal right fade" id="modalLogin" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -103,7 +105,7 @@
     </div>
 
 
-    <!--Modal create an account -->
+    <!--Registrar una cuenta -->
     <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -111,7 +113,7 @@
                     <h5 class="modal-title" id="modalLabel">Create an account</h5>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
                 </div>
-                <div class="modal-body" >
+                <div class="modal-body">
 
                     <div id="logreg-forms" class="info">
                         <form class="form-signin">
@@ -146,7 +148,8 @@
                             <input style="text-align: center" type="password" id="inputConfPassword"
                                 class="form-control" placeholder="Confirm Password" required="">
 
-                                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> <!--Test key Llave para probar captcha-->
+                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                            <!--Test key Llave para probar captcha-->
 
                             <div>
                                 <label>
@@ -168,7 +171,8 @@
                                                 class="fas fa-sign-in-alt"></i>
                                             Create Account</button>
                                         <div style="padding-top: 35px; font-size: 85%; ">Do you have an account? <a
-                                                style="display: inline;" href="#" data-dismiss="modal" data-toggle="modal" data-target="#modalLogin">
+                                                style="display: inline;" href="#" data-dismiss="modal"
+                                                data-toggle="modal" data-target="#modalLogin">
 
                                                 Sign in Here!
 
@@ -184,98 +188,33 @@
             </div>
         </div>
     </div>
-<!-- Opciones del menu -->
-<div class="option-container">
-    <a href="">Option 1</a>
-    <a href="">Option 2</a>
-    <a href="">Option 3</a>
-    <a href="">Option 4</a>
-    <a href="">Option 5</a>
-    <a href="">Option 6</a>
-    <a href="">Option 7</a>
-    <a href="">Option 8</a>
-</div>  
-<!-- Imagen principal -->
-<div class="main-recipe">
-    <img src="http://lorempixel.com/1500/1000/food" class="menu-img"/>
-    <h5 class="details">Recipe name <br><small>By Admin</small> </h5>
-    
-</div>
 
-<!-- Catalogo de Recetas-->
-<div class="recipe-container">
-    <div class="recipe">
-        <div class="col recipe">
-            <div class="recipe-normal">
-                <img src="http://lorempixel.com/200/200/food/5" alt="sada"> 
-                <i class="fas fa-heart "></i>
-                <h5 > Recipe name</h5>
-                <h6>By Admin</h6>
-                <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
-                </div>
-            </div> 
-            <div class="recipe-normal"> 
-                <img src="http://lorempixel.com/200/200/food/5" alt="sada"> 
-                <i class="fas fa-heart "></i>
-                <h5 > Recipe name</h5>
-                <h6>By Admin</h6>
-                <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
-                </div>
-            </div>
-            <div class="recipe-bigger">
-                <h5 class="details"> Recipe name <br> <small> By Admin</small> </h5>
-                <img src="http://lorempixel.com/100/300/food/7" alt="sada"> 
-                <i class="fas fa-heart like-top"></i>
-                <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
-                </div>
-            </div>  
-        </div>
-        <div class="col recipe">
-            <div class="recipe-normal">
-                <i class="fas fa-star favorite-top"></i> 
-                <img src="http://lorempixel.com/200/200/food" alt="sada" class="favorite-img"> 
-                <h5>Recipe name</h5>
-                <h6>By Admin</h6>
-                <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
-                </div>
-            </div>
-            <div class="recipe-normal"> 
-                <img src="http://lorempixel.com/200/200/food/9" alt="sada"> 
-                <i class="fas fa-heart "></i>
-                <h5 > Recipe name</h5>
-                <h6>By Admin</h6>
-                <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
-                </div>
-            </div>
-                <div class="recipe-normal"> 
-                    <img src="http://lorempixel.com/200/201/food" alt="sada"> 
-                    <i class="fas fa-heart "></i>
-                    <h5 >Recipe name</h5>
+    <!-- Opciones del menu -->
+    <div class="option-container">
+        <a href="">Option 1</a>
+        <a href="">Option 2</a>
+        <a href="">Option 3</a>
+        <a href="">Option 4</a>
+        <a href="">Option 5</a>
+        <a href="">Option 6</a>
+        <a href="">Option 7</a>
+        <a href="">Option 8</a>
+    </div>
+    <!-- Imagen principal -->
+    <div class="main-recipe">
+        <img src="http://lorempixel.com/1500/1000/food" class="menu-img" />
+        <h5 class="details">Recipe name <br><small>By Admin</small> </h5>
+
+    </div>
+
+    <!-- Catalogo de Recetas-->
+    <div class="recipe-container">
+        <div class="recipe">
+            <div class="col recipe">
+                <div class="recipe-normal">
+                    <img src="http://lorempixel.com/200/200/food/5" alt="sada">
+                    <i class="fa fa-heart "></i>
+                    <h5> Recipe name</h5>
                     <h6>By Admin</h6>
                     <div class="rate">
                         <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
@@ -285,12 +224,11 @@
                         <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
                     </div>
                 </div>
-        </div>
-        <div class="col recipe">
-                <div class="recipe-bigger">
-                        <h5 class="details"> Recipe name <br> <small> By Admin</small> </h5>
-                    <img src="http://lorempixel.com/200/400/food/7" alt="sada"> 
-                    <i class="fas fa-heart like-top"></i>
+                <div class="recipe-normal">
+                    <img src="http://lorempixel.com/200/200/food/5" alt="sada">
+                    <i class="fa fa-heart "></i>
+                    <h5> Recipe name</h5>
+                    <h6>By Admin</h6>
                     <div class="rate">
                         <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
                         <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
@@ -298,201 +236,195 @@
                         <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
                         <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
                     </div>
-                </div>  
-                <div class="recipe-normal">
-                        <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="favorite-img"> 
-                        <i class="fas fa-heart"></i>
-                        <h5> Recipe name</h5>
-                        <h6>By Admin</h6>
-                        <div class="rate">
-                            <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                            <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                            <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                            <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                            <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
-                        </div>
+                </div>
+                <div class="recipe-bigger">
+                    <h5 class="details"> Recipe name <br> <small> By Admin</small> </h5>
+                    <img src="http://lorempixel.com/100/300/food/7" alt="sada">
+                    <i class="fa fa-heart like-top"></i>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
                     </div>
-            <div class="recipe-normal">
-                <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="favorite-img"> 
-                <i class="fas fa-heart"></i>
-                <h5> Recipe name</h5>
-                <h6>By Admin</h6>
-                <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
                 </div>
             </div>
-        </div>
-        <div class="col recipe last">
-            <div class="recipe-normal">
-                <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="favorite-img"> 
-                <i class="fas fa-heart"></i>
-                <h5> Recipe name</h5>
-                <h6>By Admin</h6>
-                <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+            <div class="col recipe">
+                <div class="recipe-normal">
+                    <i class="fa fa-star favorite-top"></i>
+                    <img src="http://lorempixel.com/200/200/food" alt="sada" class="favorite-img">
+                    <h5>Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    </div>
+                </div>
+                <div class="recipe-normal">
+                    <img src="http://lorempixel.com/200/200/food/9" alt="sada">
+                    <i class="fa fa-heart "></i>
+                    <h5> Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    </div>
+                </div>
+                <div class="recipe-normal">
+                    <img src="http://lorempixel.com/200/201/food" alt="sada">
+                    <i class="fa fa-heart "></i>
+                    <h5>Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    </div>
                 </div>
             </div>
-            <div class="recipe-bigger">
-                <h5 class="details"> Recipe name <br> <small> By Admin</small> </h5>
-                <img src="http://lorempixel.com/200/400/food/7" alt="sada"> 
-                <i class="fas fa-heart like-top"></i>
-                <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+            <div class="col recipe">
+                <div class="recipe-bigger">
+                    <h5 class="details"> Recipe name <br> <small> By Admin</small> </h5>
+                    <img src="http://lorempixel.com/200/400/food/7" alt="sada">
+                    <i class="fa fa-heart like-top"></i>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    </div>
+                </div>
+                <div class="recipe-normal">
+                    <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="favorite-img">
+                    <i class="fa fa-heart"></i>
+                    <h5> Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    </div>
+                </div>
+                <div class="recipe-normal">
+                    <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="favorite-img">
+                    <i class="fa fa-heart"></i>
+                    <h5> Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    </div>
                 </div>
             </div>
-            <div class="recipe-normal">
-                <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="favorite-img"> 
-                <i class="fas fa-heart"></i>
-                <h5> Recipe name</h5>
-                <h6>By Admin</h6>
-                <div class="rate">
-                    <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
-                    <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
-                    <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
-                    <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
-                    <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+            <div class="col recipe last">
+                <div class="recipe-normal">
+                    <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="favorite-img">
+                    <i class="fa fa-heart"></i>
+                    <h5> Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    </div>
                 </div>
+                <div class="recipe-bigger">
+                    <h5 class="details"> Recipe name <br> <small> By Admin</small> </h5>
+                    <img src="http://lorempixel.com/200/400/food/7" alt="sada">
+                    <i class="fa fa-heart like-top"></i>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    </div>
+                </div>
+                <div class="recipe-normal">
+                    <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="favorite-img">
+                    <i class="fa fa-heart"></i>
+                    <h5> Recipe name</h5>
+                    <h6>By Admin</h6>
+                    <div class="rate">
+                        <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+                    </div>
+                </div>
+
             </div>
-
         </div>
-    </div>
-    <div class="btn-loadMore">
-            <button> Load More </button>
-    </div>
-    <!--
-    <div class="row recipe">
-
-       <div class="recipe-normal"> 
-        <img src="http://lorempixel.com/200/200/food/2" alt="sada" class="normal-img"> 
-        <h5> Recipe name</h5>
-        <h6>By Admin</h6>
-
-        <i class="fas fa-heart"></i>
-        </div> 
-        <div class="col recipe-normal">
-            <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="favorite-img"> 
-            <i class="fas fa-star favorite-top"></i>
-            <h5 > Recipe name</h5>
-            <h6>By Admin</h6>
-        </div> 
-        <div class="col recipe-bigger">
-            <img src="http://lorempixel.com/200/400/food/7" alt="sada" class="bigger-img"> 
-            <i class="fas fa-heart like-top"></i>
-            <h5 class="details"> Recipe name <br> <small> By Admin</small> </h5>
-        </div>         
-        <div class="col recipe-normal">
-            <img src="http://lorempixel.com/200/200/food/5" alt="sada" class="normal-img">                 
-            <h5> Recipe name</h5>
-            <h6>By Admin</h6>
-            <i class="fas fa-heart"></i>
+        <div class="btn-loadMore">
+            <a type="button" class="btn btn-warning">load more</a>
         </div>
     </div>
 
-    <div class="row recipe">   
-        <div class="col recipe-normal"> 
-            <img src="http://lorempixel.com/200/200/food/3" alt="sada" class="normal-img"> 
-            <h5> Recipe name</h5>
-            <h6>By Admin</h6>
-            <i class="fas fa-heart "></i>
-        </div> 
-        <div class="col recipe-normal"> 
-            <img src="http://lorempixel.com/200/200/food/10" alt="sada" class="normal-img"> 
-                <h5> Recipe name</h5>
-                <h6>By Admin</h6>
-                <i class="fas fa-heart "></i>
-            </div> 
-        <div class="col recipe-normal">
-            <img src="http://lorempixel.com/200/200/food/6" alt="sada" class="normal-img"> 
-            <h5> Recipe name</h5>
-            <h6>By Admin</h6> 
-            <i class="fas fa-heart"></i>    
-        </div> 
-        <div class="col recipe-bigger"> 
-            <img src="http://lorempixel.com/200/400/food/9" alt="sada" class="bigger-img"> 
-            <i class="fas fa-heart like-top"></i>
-        </div> 
-    </div>
-    <div class="row recipe">
-        <div class="col recipe-bigger">
-            <img src="http://lorempixel.com/200/400/food/1" alt="sada" class="bigger-img"> 
-            <i class="fas fa-heart like-top"></i>
+    <!-- Footer-->
+    <div id="footer">
+        <div class="frst-col-footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio praesentium ad eum, ullam, quibusdam
+                deleniti expedita dicta culpa earum sit sapiente illum est qui vitae explicabo debitis blanditiis sint.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in asperiores. Cupiditate, incidunt
+                aliquid velit officia accusamus modi hic obcaecati quo eos libero labore commodi, doloremque accusantium
+                dignissimos esse dicta!</p>
         </div>
-        <div class="col recipe-normal"> 
-            <img src="http://lorempixel.com/200/200/food/1" alt="sada" class="normal-img"> 
-            <h5> Recipe name</h5>
-            <h6>By Admin</h6>
-            <i class="fas fa-heart"></i>
-        </div> 
-        <div class="col recipe-normal"> 
-                <img src="http://lorempixel.com/200/200/food/15" alt="sada" class="normal-img"> 
-                <h5> Recipe name</h5>
-                <h6>By Admin</h6>
-                <i class="fas fa-heart"></i> 
-        </div> 
-        <div class="col recipe-normal">
-            <img src="http://lorempixel.com/200/200/food/14" alt="sada" class="normal-img"> 
-            <h5> Recipe name</h5>
-            <h6>By Admin</h6>
-            <i class="fas fa-heart"></i>
+        <div class="scnd-col-footer">
+            <hgroup>
+                <h3> Categories </h3>
+                <h6> Categorie 1 </h6>
+                <h6> Categorie 2 </h6>
+                <h6> Categorie 3 </h6>
+                <h6> Categorie 4 </h6>
+                <h6> Categorie 5 </h6>
+            </hgroup>
+        </div>
+        <div class="thrd-col-footer">
+            <h3>Recent</h3>
+            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep
+                2018</p>
+            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep
+                2018</p>
+            <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep
+                2018</p>
+        </div>
+        <div class="legal-term-footer">
+            <a>
+                2019- ALL RIGHTS RESERVED
+            </a>
+            <a class="rights-term-right">
+                PRIVACY POLICY
+            </a>
+            <a>
+                TERMS OF SERVICE
+            </a>
+            <a>
+                ACCEPTABLE USER POLICY
+            </a>
+            <a>
+                SERVICE LEVEL AGREEMENT
+            </a>
         </div>
     </div>
-
-
--->
-</div>
-
-<!-- Footer-->
-<div id="footer">
-    <div class="frst-col-footer">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio praesentium ad eum, ullam, quibusdam deleniti expedita dicta culpa earum sit sapiente illum est qui vitae explicabo debitis blanditiis sint.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in asperiores. Cupiditate, incidunt aliquid velit officia accusamus modi hic obcaecati quo eos libero labore commodi, doloremque accusantium dignissimos esse dicta!</p>
-    </div>
-    <div class="scnd-col-footer">
-        <hgroup>
-            <h3> Categories </h3>
-            <h6> Categorie 1 </h6>
-            <h6> Categorie 2 </h6>
-            <h6> Categorie 3 </h6>
-            <h6> Categorie 4 </h6>
-            <h6> Categorie 5 </h6>
-        </hgroup>
-    </div>
-    <div class="thrd-col-footer">
-        <h3>Recent</h3>
-        <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep 2018</p>
-        <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep 2018</p>
-        <p><img src="https://ipsumimage.appspot.com/50x70,ff7777" alt="wqd">RecipeName <br> By Admin <br> 06 sep 2018</p>
-    </div>
-    <div class="legal-term-footer">
-        <a >
-          2019- ALL RIGHTS RESERVED  
-        </a>  
-        <a class="rights-term-right">
-            PRIVACY POLICY 
-        </a> 
-        <a>
-            TERMS OF SERVICE  
-        </a> 
-        <a>
-            ACCEPTABLE USER POLICY
-        </a>  
-        <a>
-            SERVICE LEVEL AGREEMENT  
-        </a> 
-    </div>
-</div>    
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/main.js"></script>

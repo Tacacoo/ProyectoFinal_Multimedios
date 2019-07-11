@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,143 +10,127 @@
     <script src="https://kit.fontawesome.com/ed2276cc5d.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-    
-    <div class="">
-        <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-    </div>
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-inverse navbar-expand-lg navbar-form">
-            <div class="container-fluid">        
-                <form id="searchForm" class="form-inline my-2 my-lg-0">
-                    <a class="navbar-brand" href="index.html">Recipe Name</a>
-
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="ls-menu"><input id="searchText" class="form-control mr-sm-2" type="text" placeholder="Search"></li>
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button></li>
-                    <li class="ls-menu"><a class="btn btn-primary" href="#" onclick="showPreferences()" data-toggle="modal"
-                            data-target="#modalLogin">Login</a></li>
-                </div>
-    </nav>
-    <nav class="navbar navbar-expand-sm bg-light categories">
-
-            <!-- Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item nav-line">
-                    <a class="nav-link" href="#">ALL</a>
-                </li>
-                <li class="nav-item nav-line">
-                    <a class="nav-link" href="#">Categorie 1</a>
-                </li>
-                <li class="nav-item nav-line">
-                    <a class="nav-link" href="#">Categorie 2</a>
-                </li>
-                <li class="nav-item nav-line">
-                    <a class="nav-link" href="#">Categorie 3</a>
-                </li>
-                <li class="nav-item nav-line">
-                    <a class="nav-link" href="#">Categorie 4</a>
-                </li>
-                <li class="nav-item nav-line">
-                    <a class="nav-link" href="#">Categorie 5</a>
-                </li>
+        <div class="container-fluid">
+            <form id="searchForm" class="form-inline my-2 my-lg-0">
+                <a class="navbar-brand" href="index.html">Recipe Name</a>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="ls-menu"><input id="searchText" class="form-control mr-sm-2" type="text"
+                        placeholder="Search"></li>
+                <li class="ls-menu"><a class="btn btn-primary" href="#" onclick="showPreferences()" data-toggle="modal"
+                        data-target="#modalLogin"><i class="fas fa-align-right"></i></a></li>
             </ul>
-          
-          </nav>
-    <div class="row">
-            <div class="col">
-                  <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                  <h5> Recipe name</h5>
-                  <h6>By Admin</h6>
-                  <i class="fas fa-heart"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white categories ">
+            <a class="navbar-brand" href="#">ALL</a>
+            <span></span>
+            <a class="navbar-brand" href="#">Categorie 1</a>
+            <span></span>
+            <a class="navbar-brand" href="#">Categorie 2</a>
+            <span></span>
+            <a class="navbar-brand" href="#">Categorie 3</a>
+            <span></span>
+            <a class="navbar-brand" href="#">Categorie 4</a>
+            <span></span>
+            <a class="navbar-brand" href="#">Categorie 5</a>
+        </nav>
+    </div>
+    <div class="container recipe-searched">
+        <div class="row">
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/1" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
             </div>
-            <div class="col">
-                  <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                  <h5> Recipe name</h5>
-                  <h6>By Admin</h6>
-                  <i class="fas fa-heart"></i>
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/2" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
             </div>
-            <div class="col">
-                  <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                  <h5> Recipe name</h5>
-                  <h6>By Admin</h6>
-                  <i class="fas fa-heart"></i>
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/3" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
             </div>
-            <div class="col">
-                  <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                  <h5> Recipe name</h5>
-                  <h6>By Admin</h6>
-                  <i class="fas fa-heart"></i>
-              </div>
-          </div>
-          <div class="row">
-                <div class="col">
-                      <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                      <h5> Recipe name</h5>
-                      <h6>By Admin</h6>
-                      <i class="fas fa-heart"></i>
-                </div>
-                <div class="col">
-                      <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                      <h5> Recipe name</h5>
-                      <h6>By Admin</h6>
-                      <i class="fas fa-heart"></i>
-                </div>
-                <div class="col">
-                      <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                      <h5> Recipe name</h5>
-                      <h6>By Admin</h6>
-                      <i class="fas fa-heart"></i>
-                </div>
-                <div class="col">
-                      <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                      <h5> Recipe name</h5>
-                      <h6>By Admin</h6>
-                      <i class="fas fa-heart"></i>
-                  </div>
-              </div>
-                <div class="row ">
-                  <div class="col">
-                        <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                        <h5> Recipe name</h5>
-                        <h6>By Admin</h6>
-                        <i class="fas fa-heart"></i>
-                  </div>
-                  <div class="col">
-                        <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                        <h5> Recipe name</h5>
-                        <h6>By Admin</h6>
-                        <i class="fas fa-heart"></i>
-                  </div>
-                  <div class="col">
-                        <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                        <h5> Recipe name</h5>
-                        <h6>By Admin</h6>
-                        <i class="fas fa-heart"></i>
-                  </div>
-                  <div class="col">
-                        <img src="http://lorempixel.com/305/209/food" alt="sada" class="normal-img"> 
-                        <h5> Recipe name</h5>
-                        <h6>By Admin</h6>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-                
-                <a type="button" class="btn btn-danger">load more</a>
-              </div>
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/4" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/5" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/6" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/7" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/8" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/9" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/10" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/15" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="col searched">
+                <img src="http://lorempixel.com/205/100/food/16" alt="sada" class="normal-img">
+                <h5> Recipe name</h5>
+                <h6>By Admin</h6>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        <div class="btn-loadMore">
+            <a type="button" class="btn btn-warning">load more</a>
+        </div>
+    </div>
 
-    <div class="modal"></div>
-    <div>
-            <a class="btn btn-primary" href="#" onclick="mostrarLogin()" data-toggle="modal"
-            data-target="#modalLogin">Login</a>
-     </div>
-     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -153,7 +138,9 @@
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
                 </div>
                 <div class="modal-body" id="info">
-    
-             </div>
+
+                </div>
+
 </body>
+
 </html>
