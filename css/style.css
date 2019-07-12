@@ -30,10 +30,15 @@ div.column_modal{
 }
 
 .navbar{
+    margin: 0;
+    padding: 0;
     border-bottom-style:double;
     width:100%;
 }
 
+.navbar-brand{
+margin: auto;
+}
 .dropdown.navbar{
     display: none;
 }
@@ -840,6 +845,7 @@ h6{
 
 /* ESTILOS DE LA PÁGINA SEARCH FILTERS*/
 
+
 .categories{
     margin-bottom: 5%;
     margin-top: 5%;
@@ -949,20 +955,60 @@ a.btn{
     height: 100%;
 }
 
-a.btn{
-    align-self: center;
+
+
+/* ESTILOS MODAL DE PREFERENCES A LA DERECHA*/
+
+#modalFilter{
+    max-width: 350px;
 }
 
-/* MODAL DE PREFERENCES A LA DERECHA*/
+#nudTime{
+    display: inline;
+    max-width: 65px;
+    margin-left: 15px;
+}
 .modal.right.fade .modal-dialog {
-    right: -320px;
+    right: -35%;
     -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-            transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
 }
 
 .modal.right.fade.in .modal-dialog {
     right: 0;
 }
+
+/*Estilos de Botones preferencias */
+
+.div-filter{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    height: auto;
+    margin: 10px;
+
+}
+.diets .btn{
+    border-color: orange;
+    width: 80px !important;
+    margin: 5px;
+}
+
+.alergies .btn{
+    margin: 3px;
+    border-color: orange;
+    width: 80px;
+    margin: 5px;
+}
+
+
+.cousines .btn{
+    margin: 3px;
+    border-color: orange;
+    width: 80px;
+    margin: 5px;
+}
+
 
