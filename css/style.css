@@ -636,7 +636,6 @@ div.column_modal{ /*Comportamiento y responsividad*/
 }
 
 .recipe-normal{
-    height: auto;
     border-style: solid;
     margin: 5% 5% 5% 5%;
     padding: 0;
@@ -649,7 +648,7 @@ div.column_modal{ /*Comportamiento y responsividad*/
 }
 
 .recipe-bigger{
-    height: auto;
+    height: 400px;
     border-style: solid;
     margin: 5% 5% 5% 5%;
     padding: 0;
@@ -668,7 +667,7 @@ div.column_modal{ /*Comportamiento y responsividad*/
 }
 
 .recipe-bigger img{
-    height: 400px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }

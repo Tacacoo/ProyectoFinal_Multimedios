@@ -29,3 +29,8 @@ $(window).resize(function () { // si la pantalla se hace grande se agrega la cla
             $(".fa-star").addClass("fa-2x"); // agrega la clase al elemento
     }
 });
+$(document).keypress(function (e) {
+    if (e.which == 13) {
+        alert('enter key is pressed');
+    }
+});
